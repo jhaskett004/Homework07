@@ -12,6 +12,8 @@ public class SharedViewModel extends ViewModel {
 
     private MutableLiveData<List<Inbox>> items;
 
+    public SharedViewModel() {items = new MutableLiveData<>();}
+
 
 }
 
