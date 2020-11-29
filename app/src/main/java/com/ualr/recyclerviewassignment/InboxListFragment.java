@@ -29,8 +29,6 @@ public class InboxListFragment extends Fragment {
     }
 
 
-    
-
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -45,6 +43,5 @@ public class InboxListFragment extends Fragment {
             List<Inbox> items = DataGenerator.getInboxData(getActivity());
             mAdapter = new AdapterListInbox(getActivity(), items);
             recyclerView.setAdapter(mAdapter);
-
     }
 }
