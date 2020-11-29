@@ -28,6 +28,9 @@ public class InboxListFragment extends Fragment {
         viewModel = new ViewModelProvider(getActivity()).get(SharedViewModel.class);
     }
 
+
+    
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
