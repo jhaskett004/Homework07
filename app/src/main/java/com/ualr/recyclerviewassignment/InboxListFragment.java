@@ -20,6 +20,9 @@ public class InboxListFragment extends Fragment {
     private RecyclerView recyclerView;
     private AdapterListInbox mAdapter;
 
+
+    
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
