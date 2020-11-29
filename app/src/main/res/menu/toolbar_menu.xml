@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <item
+        android:id="@+id/toolbar_forward"
+        android:title="@string/toolbar_forward" />
+
+    <item
+        android:id="@+id/toolbar_delete"
+        android:icon=
+
 </menu>

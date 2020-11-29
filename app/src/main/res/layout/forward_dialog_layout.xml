@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/forward_window_size"
+    android:layout_marginTop="@dimen/forward_window_top_margin"
+    android:layout_marginLeft="@dimen/spacing_mxlarge"
+    android:layout_marginRight="@dimen/spacing_mxlarge"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+        android:id="@+id/textView_forwardMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryLight"
+        android:padding="@dimen/spacing_mlarge"
+        android:text="@string/forward_frag_title"
+        android:textColor="@color/overlay_light_90"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_To"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_xmlarge"
+        android:layout_marginLeft="@dimen/spacing_xmlarge"
+        android:layout_marginTop="@dimen/spacing_mxlarge"
+        android:text="@string/forward_frag_to"
+        android:textColor="@color/grey_500"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_forwardMessage" />
+
+    <TextView
+        android:id="@+id/textView_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_middlelarge"
+        android:text="@string/forward_frag_name"
+        android:textColor="@color/grey_500"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView_To"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_To" />
+
+    <TextView
+        android:id="@+id/textView_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_middlelarge"
+        android:text="@string/forward_frag_text"
+        android:textColor="@color/grey_500"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView_Name"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Name" />
+
+    <EditText
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.407"
+        app:layout_constraintStart_toEndOf="@+id/textView_To"
+        app:layout_constraintTop_toBottomOf="@+id/textView_forwardMessage" />
+
+    <EditText
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.407"
+        app:layout_constraintStart_toEndOf="@+id/textView_To"
+        app:layout_constraintTop_toBottomOf="@+id/textView_forwardMessage" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="275dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.407"
+        app:layout_constraintStart_toEndOf="@+id/textView_To"
+        app:layout_constraintTop_toBottomOf="@+id/textView_forwardMessage" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:background="@color/material_on_surface_stroke"
+        android:text="@string/forward_frag_send"
+        android:textAlignment="textEnd"
+        android:textColor="@color/colorPrimaryLight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editText"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+</androidx.constraintlayout.widget.ConstraintLayout>

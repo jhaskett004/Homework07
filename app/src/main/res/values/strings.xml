@@ -4,4 +4,11 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam efficitur ipsum in placerat molestie.  Fusce quis mauris a enim sollicitudin
         \n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam efficitur ipsum in placerat molestie.  Fusce quis mauris a enim sollicitudin
     </string>
+    <string name="forward_frag_title">Forward Message</string>
+    <string name="forward_frag_to">To:</string>
+    <string name="forward_frag_name">Name:</string>
+    <string name="forward_frag_text">Text:</string>
+    <string name="forward_frag_send">Send</string>
+    <string name="toolbar_forward">Forward</string>
+
 </resources>
