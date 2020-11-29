@@ -19,7 +19,6 @@ public class InboxListFragment extends Fragment {
 
     private RecyclerView recyclerView;
     private AdapterListInbox mAdapter;
-    private FloatingActionButton mFAB;
 
     @Nullable
     @Override
@@ -35,13 +34,6 @@ public class InboxListFragment extends Fragment {
             List<Inbox> items = DataGenerator.getInboxData(getActivity());
             mAdapter = new AdapterListInbox(getActivity(), items);
             recyclerView.setAdapter(mAdapter);
-            mFAB = view.findViewById(R.id.fab);
-            mFAB.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    mAdapter.addNewItem();
-                    recyclerView.scrollToPosition(0);
-                }
-            });
+
     }
 }
